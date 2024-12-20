@@ -86,6 +86,25 @@ const Msg = {
     BRAND_UPDATED: "Brand updated successfully.",
     BRAND_DELETED: "Brand deleted successfully.",
 
+    // ProductController
+    PRODUCT_NAME_REQUIRED: "Product name is required.",
+    BRAND_ID_REQUIRED: "Brand ID is required.",
+    CATEGORY_ID_REQUIRED: "Category ID is required.",
+    PRODUCT_PRICE_REQUIRED: "Product price must be a positive number.",
+    PRODUCT_DESCRIPTION_REQUIRED: "Product description is required.",
+    PRODUCT_IMAGE_REQUIRED: "Product image is required.",
+    PRODUCT_SIZE_REQUIRED: "Product size is required.",
+    PRODUCT_COLOR_REQUIRED: "Product color is required.",
+    PRODUCT_STOCK_REQUIRED: "Product stock must be a positive integer.",
+    PRODUCT_ID_REQUIRED: "Product ID is required.",
+    PRODUCT_EXISTS: "Product already exists.",
+    PRODUCT_NOT_FOUND: "Product not found.",
+    INSUFFICIENT_STOCK: "The requested quantity for this product is not available",
+    INVALID_PRODUCT_ID: "Invalid product ID.",
+    PRODUCT_CREATED: "Product added successfully.",
+    PRODUCT_UPDATED: "Product updated successfully.",
+    PRODUCT_DELETED: "Product deleted successfully.",
+
     // Token
     TOKEN_REQUIRED: "Token is required.",
     INVALID_TOKEN: "Invalid token.",

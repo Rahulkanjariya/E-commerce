@@ -20,7 +20,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(express.static('public'));
 
 // Serve uploaded files (like brand logos)
-app.use('/uploads/brand-logo', express.static('uploads/brand-logo'));
+// app.use('/uploads/brand-logo', express.static('uploads/brand-logo'));
 
 // Authentication API Routes
 app.use("/api/v1/auth", require("./routes/Api/v1/auth/authRoute"));
