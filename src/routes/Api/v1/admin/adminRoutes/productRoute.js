@@ -48,4 +48,62 @@ router.post(
     controller.addProduct
 );
 
+router.get(
+    "/list/product",authenticateAdmin,
+    query("search").optional().isString(),
+    query("page").optional().toInt(),
+    query("perPage").optional().toInt(),
+    controller.listProduct
+);
+
+router.get(
+    "/product/detail/:id",authenticateAdmin,
+    param("id")
+        .isMongoId()
+        .withMessage(Msg.INVALID_PRODUCT_ID),    
+    controller.productDetail
+);
+
+router.put(
+    "/update/product/:id",authenticateAdmin,
+    param("id")
+        .isMongoId()
+        .withMessage(Msg.INVALID_PRODUCT_ID),
+    body("name")
+        .optional()
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_NAME_REQUIRED),
+    body("price")
+        .optional()
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_PRICE_REQUIRED),
+    body("description")
+        .optional()    
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_DESCRIPTION_REQUIRED),
+    body("size")
+        .optional()
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_SIZE_REQUIRED),
+    body("color")
+        .optional()    
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_COLOR_REQUIRED),
+    body("stock")
+        .optional()    
+        .notEmpty()
+        .withMessage(Msg.PRODUCT_STOCK_REQUIRED),
+    controller.updateProduct
+);
+
+router.delete(
+    "/delete/product/:id",authenticateAdmin,
+    param("id")
+        .isMongoId()
+        .withMessage(Msg.INVALID_PRODUCT_ID),    
+    controller.deleteProduct
+);
+
+
+
 module.exports = router;
