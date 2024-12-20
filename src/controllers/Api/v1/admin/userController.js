@@ -1,3 +1,5 @@
+"use strict";
+
 const service = require("../../../../helpers/index");
 const Msg = require("../../../../helpers/localization");
 const { HttpStatus } = require("../../../../errors/code");
