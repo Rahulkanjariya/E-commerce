@@ -46,7 +46,3 @@ server.listen(process.env.PORT, () => {
 });
 
 module.exports = app;
-
-// User Token - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjJjNGYwZTY5NTJiNjJkMjYxNWM5NSIsImlhdCI6MTczNDYxNDEzNiwiZXhwIjoxNzM5Nzk4MTM2fQ.6rajG3dltiimRSs2L_ma1No-_oitbEm6gk_9BSPIzJ4
-
-// Admin Token - eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjNlZjAxMmNmNmJjOTIxNTdhZGQ3NCIsImlhdCI6MTczNDYwMjUxMiwiZXhwIjoxNzM5Nzg2NTEyfQ.bjmZ3uUei7_mO0SBSUSfG-Cor_-lWMapyUfAO1MuaOo

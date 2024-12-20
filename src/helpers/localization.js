@@ -105,6 +105,20 @@ const Msg = {
     PRODUCT_UPDATED: "Product updated successfully.",
     PRODUCT_DELETED: "Product deleted successfully.",
 
+    // WishlistController
+    INVALID_WISHLIST_ID: "Invalid wishlist ID.",
+    WISHLIST_NOT_FOUND: "Wishlist not found.",
+    ITEM_ADDED_TO_WISHLIST: "Item added to wishlist.",
+    ITEM_REMOVED_FROM_WISHLIST: "Item removed from wishlist.",
+
+    // ReviewController
+    RATING_REQUIRED: "Rating is required.",
+    INVALID_RATING: "Rating must be between 1 and 5.",
+    COMMENT_REQUIRED: "Comment is required.",
+    INVALID_REVIEW_ID: "Invalid review ID.",
+    REVIEWS_NOT_FOUND: "No reviews found.",
+    INVALID_COMMENT_LENGTH: "Comment cannot exceed 500 characters.",
+
     // Token
     TOKEN_REQUIRED: "Token is required.",
     INVALID_TOKEN: "Invalid token.",

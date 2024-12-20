@@ -7,5 +7,6 @@ router.use(require("./categoryRoute"));
 router.use(require("./subCategoryRoute"));
 router.use(require("./brandRoute"));
 router.use(require("./productRoute"));
+router.use(require("./reviewRoute"));
 
 module.exports = router;
